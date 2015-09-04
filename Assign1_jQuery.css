@@ -1,15 +1,33 @@
 
 #container{
 	background-color: black;
-	width:900px;
+	width:100%;
 	margin:0px auto;
 	color:white;
 	padding-left:10px;
+	 -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color: grey;}
+    25%  {background-color: white;}
+    50%  {background-color: pink;}
+    100% {background-color: black;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color: grey;}
+    25%  {background-color: white;}
+    50%  {background-color: pink;}
+    100% {background-color: black;}
+}
 	}
-.statement{
-		font-size: 150%;
-		color:yellow;
-	}
+
 h1, h2, h3, li, p{
 	color: white;
 	}
@@ -21,4 +39,55 @@ b{
 	}
 #naturalHues{
 	position: relative;
+	display: block;
 	}
+#mixAndMatch{
+	display: block;
+}
+#fall_trend{
+	display: block;
+}
+.toggle_shoe1{
+	display: block;
+
+}
+.btn0{
+	display: block;
+
+}
+
+
+
+/* somewhere in between 480px and 640px
+@media all and (max-width: 500px) {
+	#mixAndMatch{
+		width:300px;
+	}
+	#naturalHues{
+		width:300px;
+	}
+}*/
+
+/* 640px up to 960px */
+/*media all and (max-width: 600px) {
+	#mixAndMatch{
+		width:500px;
+	}
+	#naturalHues{
+		width:500px;
+	}
+}*/
+@media all and (max-width: 1200px){
+	#mixAndMatch{
+		width:50%;
+	}
+	#naturalHues{
+		width:50%;
+	}
+}
+
+/* 960px and above
+@media all and (min-width: 960px) {
+	#large {
+			color: green;
+	}*/
